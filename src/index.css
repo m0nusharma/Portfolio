@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Planer Light";
+  src: url("./assets/Planer.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  font-family: "Planer Light", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: none;
+  color: black;
+}
+
+@media only screen and (max-width: 700px) {
+  #DetailsPageOne {
+    display: none;
+  }
+
+  #DetailsPageTwo {
+    display: block;
+  }
+
+  
+  .mQuarySizeBook{
+    height: 200px;
+    width: 140px;
+  }
+  .projectNameHeading{
+    font-size: 2.75rem;
+    line-height: 1;
+  }
+}
+
+@media only screen and (min-width: 701px) {
+  #DetailsPageTwo {
+    display: none;
+  }
+  #DetailsPageOne {
+    display: block;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .works {
+    display: flex;
+    flex-direction: row;
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
+    /* margin-bottom: 20px; */
+    position: relative;
+    top: 60px;
+  }
+  .mainHeading {
+    font-size: 45px;
+  }
+  .mainDetails {
+    font-size: 12px;
+  }
+  .detailsSetting {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+  }
+}
